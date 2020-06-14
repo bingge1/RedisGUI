@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sea 钱包中心</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/front.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script type="application/javascript">
+      /*delete window.exports;
+      delete window.module;*/
+        const BigNumber = require('bignumber.js');
+
+        var a = new BigNumber(9.888);
+        console.log(a.multipliedBy(Math.pow(10,5)).toString())
+         console.log(a.dividedBy(Math.pow(10,5)).toString())
+    </script>
+    <script type="text/javascript" src="./static/js/common.js"></script>
+    <script type="text/javascript" src="./static/js/index.js"></script>
+  </head>
+  <body>
+    <div class="top-layer">
+      <a class="selectCoin">选择币种</a>
+      <div class="search-layer"><input name="symbolText" class="search-input"/><span class="search"></span></div>
+    </div>
+    <div class="coin-sea" id="coins">
+      <ul class="coin-list" >
+      </ul>
+    </div>
+    <div id="wallet" class="coin-sea">
+    </div>
+  </body>
+</html>

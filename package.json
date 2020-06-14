@@ -1,0 +1,46 @@
+{
+  "name": "RedisGUI",
+  "version": "1.0.0",
+  "description": "Redis Gui 操作界面",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w yourmodule",
+    "package": "electron-builder"
+  },
+  "asar": false,
+  "repository": "https://github.com/bingge1/RedisGUI",
+  "keywords": [],
+  "author": "inspires.cn",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-rebuild": "^1.11.0"
+  },
+  "build": {
+    "appId": "cn.inspires",
+    "copyright": "inspires copy right",
+    "productName": "Sea",
+    "directories": {
+      "output": "dist"
+    },
+    "electronDownload": {
+      "mirror": "https://npm.taobao.org/mirrors/electron/"
+    }
+  },
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "axios": "^0.19.2",
+    "bignumber.js": "^9.0.0",
+    "copy-text-to-clipboard": "^2.2.0",
+    "fs-extra": "^9.0.0",
+    "jquery": "^3.5.1",
+    "log4js": "^6.3.0",
+    "popper.js": "^1.14.6",
+    "qrcode": "^1.4.4",
+    "sweetalert": "^2.1.2",
+    "user-home": "^2.0.0",
+    "redis": "^3.0.2",
+    "vue": "^2.6.11"
+  }
+}
