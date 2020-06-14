@@ -1,35 +1,25 @@
-### 编译依赖
-* 安装Nodejs 语言安装包
-* 安装Python 环境，要求2.7版本，不可使用3.x版本
-* [net framework 2.0 sdk](https://www.microsoft.com/en-us/download/details.aspx?id=15354) 或者visual studio
+# redis-gui
 
-npm config set registry http://registry.npm.taobao.org/
+> redis gui application
 
+#### Build Setup
 
-npm config set msvs_version 2017 --global
-
-npm install --global --production  windows-build-tools --vs2017
-
-
-3、克隆sea代码仓库
-git clone  git.atkj6666.com/blockchain/sea
-4、到仓库根目录下执行安装依赖
+``` bash
+# install dependencies
 npm install
-electron-rebuild .
- electron-builder install-app-deps
-5、启动sea客户端
-npm start
+
+# serve with hot reload at localhost:9080
+npm run dev
+
+# build electron application for production
+npm run build
 
 
+# lint all JS/Vue component files in `src/`
+npm run lint
 
-打包命令
-electron-packager . sea --win --out dist --arch=x64 --version1.0.0 --overwrite --icon=./static/img/icon.png
+```
 
-打包之后，使用cmd 下面的start$env 脚本启动
+---
 
-npm install -g electron-packager
-npm run package
-
-安装指南
-
-将压缩包 解压到 D盘合适目录 下
+This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[45a3e22](https://github.com/SimulatedGREG/electron-vue/tree/45a3e224e7bb8fc71909021ccfdcfec0f461f634) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
